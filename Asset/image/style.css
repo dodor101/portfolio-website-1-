@@ -111,7 +111,7 @@ h1:hover{
     align-items: center;
     flex-direction: column;
     background-color: rgb(11, 190, 130);
-    height: 700px;
+    height: 800px;
 }
 
 .about-content {
@@ -138,6 +138,7 @@ h1:hover{
     box-sizing: border-box;
     align-items: stretch;
     gap: 20px;
+    justify-content: center;
 }
 
 .cards img  {
