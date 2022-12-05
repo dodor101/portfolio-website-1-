@@ -286,10 +286,13 @@ ul li {
 @media only screen and (max-width: 400px) {
     header {
 
-        display: block ;
+        display: flex ;
         background-color: aquamarine;
-        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
+        height: fit-content;
     
     }
     .content {
@@ -329,14 +332,17 @@ h1 span {
 }
 ul {
     display: flex;
-    justify-content: center;
-    margin-top: 4%;
-
+    justify-content: center;   
+    margin-bottom: 4% ;
+    margin-left: 26px;
 }
 ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
     font-size: 20px;
-    margin: 0px;
+    margin: px;
     ;
     
 }
@@ -346,12 +352,13 @@ ul li {
     justify-content: center ;
     align-items: center;
     margin-top: 100px;
-    
+    width: auto ;
 }
 .contact-content {
     line-height: 2;
-    font-size: 18px;
+    font-size: 12px;
     width:fit-content;
+    
 }
 
 .cards {
