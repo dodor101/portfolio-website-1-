@@ -1,7 +1,7 @@
 :root {
   --color1: aquamarine;
   --body--color: aliceblue;
-  --anchor--tag: black;
+  --anchor--tag: rgb(29, 28, 28);
   --anchor--tag--hover: rgb(51, 47, 118);
   --about--section-color: rgb(206, 243, 231);
 }
@@ -14,6 +14,13 @@
 }
 body {
   background-color: var(--body--color);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 /* Header section */
 h1 {
@@ -51,8 +58,8 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  font-size: 24px;
+  gap: 1rem;
+  font-size: 22px;
   list-style: none;
 }
 nav ul li {
@@ -64,17 +71,19 @@ ul li a {
   text-decoration: none;
   cursor: pointer;
   color: var(--anchor--tag);
-  margin: 0 5px;
   letter-spacing: 2px;
   font-weight: 500px;
   transition: 0.6s;
 }
 
 /* Hover Effects */
-ul li:hover {
+ul li a:hover {
   color: var(--anchor--tag--hover);
-  font-size: 22px;
+  font-size: 24px;
   transition: font-size 1s;
+  background-color: var(--body--color);
+  padding: 10px;
+  border-radius: 25px;
 }
 
 h1:hover {
@@ -144,7 +153,6 @@ h1:hover {
   gap: 30px;
   flex: 2 0 600px;
   transition: all 500ms;
-
 }
 
 .about img {
@@ -199,7 +207,7 @@ h1:hover {
 }
 /* Footer section */
 footer {
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   height: 100px;

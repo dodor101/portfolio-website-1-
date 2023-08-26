@@ -8,4 +8,4 @@ This is my Portfolio webpage which is a representation of my work using HTML and
 
 ## live page
 
-[Deployed page.](https://https://dodor101.github.io/portfolio-website-1-/)
+[Deployed page.](https://dodor101.github.io/portfolio-website-1-/)
