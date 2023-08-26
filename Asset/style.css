@@ -1,0 +1,254 @@
+:root {
+  --color1: aquamarine;
+  --body--color: aliceblue;
+  --anchor--tag: black;
+  --anchor--tag--hover: rgb(51, 47, 118);
+  --about--section-color: rgb(206, 243, 231);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: var(--body--color);
+}
+/* Header section */
+h1 {
+  font-size: 250%;
+  color: rgb(20, 7, 7);
+  font-family: Helvetica, sans-serif;
+}
+h1 span {
+  color: rgb(66, 77, 193);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  flex-basis: 50%;
+  background-color: var(--color1);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.8rem;
+  transition: 0.6s;
+}
+
+header h1 {
+  position: relative;
+  font-weight: 700;
+  letter-spacing: 2px;
+  transition: 0.6s;
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 24px;
+  list-style: none;
+}
+nav ul li {
+  position: relative;
+}
+
+ul li a {
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--anchor--tag);
+  margin: 0 5px;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+/* Hover Effects */
+ul li:hover {
+  color: var(--anchor--tag--hover);
+  font-size: 22px;
+  transition: font-size 1s;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: rgb(237, 159, 57);
+}
+
+/* Styling content section */
+
+.content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20rem 0;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.image img {
+  height: 40rem;
+  border-radius: 2rem;
+  width: 100%;
+  object-fit: contain;
+}
+
+.info {
+  flex: 0 0 30%;
+  padding: 40px;
+  line-height: 1.5;
+}
+.info p {
+  letter-spacing: 1.5px;
+}
+
+.big-name {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.profession {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: grey;
+}
+
+/* About section */
+.about {
+  background-color: var(--about--section-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 3rem;
+  letter-spacing: 2px;
+  width: 100%;
+}
+
+/* cards section */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex: 2 0 600px;
+  transition: all 500ms;
+
+}
+
+.about img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 40px;
+  box-shadow: 8px 10px 10px gray;
+}
+.card h3 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* Contact section */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+  letter-spacing: 2px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10%;
+}
+
+.contact .contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+/* Footer section */
+footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: var(--color1);
+  justify-content: center;
+}
+footer h4 {
+  color: grey;
+}
+
+/* Media queries section */
+
+/* @media queries for tablets at 768px */
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 200%;
+  }
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .content {
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .image img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* @Media queries for Mobile at 400px */
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  h1 span {
+    font-size: 40px;
+  }
+  .image img {
+    display: none;
+  }
+}
